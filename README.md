@@ -29,3 +29,11 @@
 ## Поддержка
 
 Если у вас возникли вопросы или предложения по улучшению **onlinesim-access-app**, пожалуйста, создайте тему в разделе [Issues](https://github.com/s00d/onlinesim-access-app/issues) на GitHub проекта.
+
+## macos
+
+Если не запускаеся приложение, то запустите команду
+
+```bash
+xattr -cr /Applications/onlinesim-access-app.app && codesign --force --deep --sign - /Applications/onlinesim-access-app.app
+```
